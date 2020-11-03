@@ -11,8 +11,7 @@
 				<!--/Perfil corto /-->\
 				<div class="profile-section pt-3 pt-lg-0">\
 				    <img class="profile-image mb-3 rounded-circle mx-auto" src="images/profile1.jpg" alt="image" >			\
-					<div class="bio mb-3">Soy programador full stack junior, pero estoy mas enfocado en el backend. Soy un joven con muchos sueños y aspiraciones y con muchas ganas de tener mis primeras experiencias profesionales.<a href="about.html"> Lee mas sobre mi</a></div>\
-\
+					<div class="bio mb-3">Soy programador full stack junior, pero estoy mas enfocado en el backend. Soy un joven con muchos sueños y aspiraciones y con muchas ganas de tener mis primeras experiencias profesionales.<a href="about.html"> Lee mas sobre mí</a></div>\
 \
 					<!--//Redes Sociales-->\
 					<ul class="social-list list-inline py-3 mx-auto">\
@@ -23,14 +22,14 @@
 			        <hr> \
 				</div><!--//profile-section-->\
 				<ul class="navbar-nav flex-column text-left">\
-					<li class="nav-item active">\
+					<li class="nav-item">\
 					    <a class="nav-link" href="index.html"><i class="fas fa-home fa-fw mr-2"></i>Inicio<span class="sr-only">(current)</span></a>\
 					</li>\
 					<li class="nav-item">\
 					    <a class="nav-link" href="blog-post.html"><i class="fas fa-bookmark fa-fw mr-2"></i>Personales</a>\
 					</li>\
 					<li class="nav-item">\
-					    <a class="nav-link" href="about.html"><i class="fas fa-user fa-fw mr-2"></i>Sobre mi</a>\
+					    <a class="nav-link" href="about.html"><i class="fas fa-user fa-fw mr-2"></i>Sobre mí</a>\
 					</li>\
 				</ul>\
 			</div>\
