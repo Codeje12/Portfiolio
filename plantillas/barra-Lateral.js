@@ -26,7 +26,7 @@
 					    <a class="nav-link" href="index.html"><i class="fas fa-home fa-fw mr-2"></i>Inicio<span class="sr-only">(current)</span></a>\
 					</li>\
 					<li class="nav-item">\
-					    <a class="nav-link" href="blog-post.html"><i class="fas fa-bookmark fa-fw mr-2"></i>Personales</a>\
+					    <a class="nav-link" href="perfilAcademico.html"><i class="fas fa-bookmark fa-fw mr-2"></i>Estudios</a>\
 					</li>\
 					<li class="nav-item">\
 					    <a class="nav-link" href="about.html"><i class="fas fa-user fa-fw mr-2"></i>Sobre mí</a>\
