@@ -24,30 +24,34 @@
 					personal autorizado deberá poder tener acceso.</p>
 				    
 				    <h3 class="mt-5 mb-3">Principales Funcionalidades</h3>
-				    <p>-Gestion de Ventas: Agiliza la gestión de ventas Minoristas y
-					Mayoristas. Registro y emisión de comprobantes de venta,
-					presupuestos, pedidos, remitos, facturación electrónica
-					- Gestión de Compras: Manejo de toda la gestión de compras.
-					Registro de comprobantes de compra. Facturas, notas de débito,
-					notas de crédito, requerimientos, solicitudes, presupuestos,
-					pedidos, remitos.
-					- Gestión de Caja: Manejo y consulta de múltiples cajas de uno o
-					varios locales.
-					- Stock: Administra y controla el stock de mercadería entre los
-					 locales, reflejándolo automáticamente en el sistema.
-					Realiza consultas de stock local y entre locales. Informa sobre
-					mínimos y máximos de stock y cantidades de stock en tránsito.
-					- Toma de Inventario: Controla y ajusta las diferencias del stock del
-					sistema en función al inventario físico.
-					- Consultas: Realiza consultas de stock, precios, disponibilidad de la
-					mercadería, de clientes y de proveedores.
-					- Administrador: Seguridad y herramientas centralizadas para mejor
-					manejo del sistema. Crea configuraciones</p>
+				    <p>
+				    	<ul>
+				    		<li>
+				    			Gestion de Ventas: Agiliza la gestión de ventas Minoristas y Mayoristas. 
+				    		</li>
+				    		<li>
+					            Stock: Administra y controla el stock, reflejándolo automáticamente en el sistema.
+					
+				    		</li>
+				    		<li>
+				    			Realiza consultas de stock  Informa sobre
+								mínimos y máximos de stock y cantidades de stock actual.
+				    		</li>
+				    		<li>
+								Consultas: Realiza consultas de stock, precios, disponibilidad de la
+								mercadería, de clientes y de proveedores.
+				    		</li>
+				    		<li>
+				    			Administrador: Seguridad y herramientas centralizadas para mejor
+				    			manejo del sistema.
+				    		</li>
+				    	</ul>
+				    </p>
 				    <pre>
 				    </pre>
 				    <h3 class="mt-5 mb-3">Cargar clientes a la base de datos</h3>
 				    <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="images/blog/PantallaCliente.png" alt="image">
-				    <p>Esta es la pantalla de abml. En ella podemos hacer las alta, bajas, modificaciones y lecturas de los clientes que tenga el negocio.</p>
+				    <p>Esta es la pantalla de Clientes. En ella podemos hacer las alta, bajas, modificaciones y lecturas de los clientes que se tenga.</p>
 				    <h5 class="my-3">Datos Clientes</h5>
 				    <ul class="mb-5">
 					  <li class="mb-2">Es un panel que divide el ingreso de datos de los clientes.</li>
@@ -70,9 +74,61 @@
 				    <h3 class="mt-5 mb-3">Cargas de productos</h3>
 				    <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="images/blog/PantallaProducto.png" alt="image">
 
+				    <h3 class="mt-5 mb-3">Base de datos</h3>
+				    <p>La base de datos fue hecho con ayuda del programa ER/Studio una herramienta case que te ayuda a crea el scrip de la base de datos y a hacer sus cardinalidades, sus relaciones.</p>
+
+				    <h3 class="mt-5 mb-3">Base de Datos</h3>
+				    <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="images/blog/Modelo_Punto-Venta.JPG" alt="image">
+				    <p>Esto es una representacion de como se planteó la base de datos en un principio.</p>
 
 				    <h3 class="mt-5 mb-3">Video del programa</h3>
 				    <p>En este pequeño video muestro algunos detalles y cómo dar de alta los productos.</p>
+
+				    <h2>Esto es una porcion del Lenguaje sql para crear mis tablas</h2>
+				    <code><br>
+
+				    	CREATE TABLE Cliente(
+    Id_Cliente    INT NOT NULL AUTO_INCREMENT,
+    Dni           VARCHAR(50),
+    Apellido      VARCHAR(50),
+    Correo        VARCHAR(50),
+    Telefono      VARCHAR(50),
+    Nombre        VARCHAR(50),
+    PRIMARY KEY (Id_Cliente)
+)ENGINE=INNODB
+;<br>
+<br>
+
+
+-- TABLA: Compra 
+
+CREATE TABLE Compra(
+    Id_Compra             INT NOT NULL AUTO_INCREMENT,
+    Id_Proveedor          INT             NOT NULL,
+    Descripcion_Compra    VARCHAR(100),
+    Fecha_Compra          DATETIME,
+    PRIMARY KEY (Id_Compra)
+)ENGINE=INNODB
+;
+
+<br>
+<br>
+
+-- 
+-- TABLE: Detalle_Venta 
+
+CREATE TABLE Detalle_Venta(
+    Id_Detalle         INT NOT NULL AUTO_INCREMENT,
+    Id_Venta           INT               NOT NULL,
+    Id_Cliente         INT               NOT NULL,
+    Id_Producto        INT               NOT NULL,
+    Total              DECIMAL(50, 0),
+    Catidad            DECIMAL(18, 0),
+    Precio_Unitario    DECIMAL(50, 0),
+    PRIMARY KEY (Id_Detalle, Id_Venta, Id_Cliente)
+)ENGINE=INNODB
+;<br>
+				    </code>
 
 				    <div class="embed-responsive embed-responsive-16by9">
 					   <iframe width="560" height="315" src="https://www.youtube.com/embed/Omw-7YO1Yu8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>					
