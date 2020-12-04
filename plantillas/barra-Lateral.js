@@ -1,6 +1,6 @@
    document.write(' \
    <header class="header text-center">	    \
-	    <h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">Enrique Javier</a></h1>\
+   <a href="index.html"><h1 class="blog-name pt-lg-4 mb-0">Enrique Javier</h1></a>\
         <!--Barra de navegacion de la Izquierda -->\
 	    <nav class="navbar navbar-expand-lg navbar-dark" >\
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">\
