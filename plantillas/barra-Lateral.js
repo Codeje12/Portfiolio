@@ -11,7 +11,7 @@
 				<!--/Perfil corto /-->\
 				<div class="profile-section pt-3 pt-lg-0">\
 				    <img class="profile-image mb-3 rounded-circle mx-auto" src="images/profile1.jpg" alt="image" >			\
-					<div class="bio mb-3">Soy programador full stack junior, pero estoy mas enfocado en el backend. Soy un joven con muchos sueños y aspiraciones y con muchas ganas de tener mis primeras experiencias profesionales.<a href="about.html"> Lee mas sobre mí</a></div>\
+					<div class="bio mb-3">Soy un joven con muchos sueños y aspiraciones pero, sobre todo con muchas ganas de tener mis primeras experiencias profesionales.<a href="about.html"> <br>Lee mas sobre mí</a></div>\
 \
 					<!--//Redes Sociales-->\
 					<ul class="social-list list-inline py-3 mx-auto">\
